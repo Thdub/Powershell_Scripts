@@ -1,7 +1,6 @@
 # Export 3rd party drivers on your Desktop
 # Also changes driver name to more human readable mode
 # Printer drivers are excluded by default (inf-file names have been changed automatically)
-#
 
 $Manufacturer = (Get-WmiObject -Class win32_computersystem).Manufacturer
 $Model = (Get-WmiObject -Class win32_computersystem).Model
@@ -16,7 +15,7 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
   Exit
  }
 }
-	
+
 # Export Drivers
 if (Test-Path $DestinationPath)  {
   Write-Host "`"$DestinationPath`" already exists, deleting folder."

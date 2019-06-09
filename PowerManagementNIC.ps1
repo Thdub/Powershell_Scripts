@@ -1,5 +1,14 @@
-# Start log
-Start-Transcript -Path ("$env:TEMP\SettingsBackup\Logs\PowerManagementNIC.log") -Append | out-null
+# Self-elevate the script
+if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
+ if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
+  $CommandLine = "-File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
+  Start-Process PowerShell.exe -Verb Runas -Window Hidden -ArgumentList $CommandLine
+  Exit
+ }
+}
+
+# Start log transcript
+Start-Transcript -Path ($MyInvocation.MyCommand.Definition -replace 'ps1','log') -Append | out-null
 
 $intNICid=0; do
 {

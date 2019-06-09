@@ -1,4 +1,4 @@
-# Self-elevate the script
+﻿# Self-elevate the script 
 if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
  if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
   $CommandLine = "-File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
@@ -23,15 +23,11 @@ Param(
 [Array]$Servers
 )
 
-# Custom Title
-$host.ui.RawUI.WindowTitle =  "Optimize Next Gen v3.8 | Powershell Script"
-$runStart = [DateTime]::Now
-
 # Set dskcache.exe utility flag
 if ($WriteCache) {$flag="+"} else {$flag="-"}
 
-# Start log
-Start-Transcript -Path ("$env:TEMP\SettingsBackup\Logs\DiskWriteCaching.log") -Append | out-null
+# Start log transcript
+Start-Transcript -Path ($MyInvocation.MyCommand.Definition -replace 'ps1','log') -Append | out-null
 
 foreach ($server in $servers)
 { 
