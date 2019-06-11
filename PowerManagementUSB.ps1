@@ -8,7 +8,7 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 # Start log transcript
-Start-Transcript -Path ($MyInvocation.MyCommand.Definition -replace 'ps1','log') -Append | out-null
+Start-Transcript -Path ($PSScriptRoot -replace 'ps1','log') -Append | out-null
 
 # Start process for usb hubs
 $hubs = Get-WmiObject Win32_USBHub
