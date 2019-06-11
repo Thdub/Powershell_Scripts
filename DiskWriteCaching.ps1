@@ -31,7 +31,7 @@ Start-Transcript -Path ($PSScriptRoot -replace 'ps1','log') -Append | out-null
 
 foreach ($server in $servers)
 { 
-    Copy-Item -Path ".\..\..\Utilities\dskcache.exe" -Destination "$env:TEMP"
+    Copy-Item -Path "$PSScriptRoot\dskcache.exe" -Destination "$env:TEMP"
 
 	$Disk=Get-WmiObject Win32_DiskDrive
 
