@@ -27,7 +27,7 @@ Param(
 if ($WriteCache) {$flag="+"} else {$flag="-"}
 
 # Start log transcript
-Start-Transcript -Path ($MyInvocation.MyCommand.Definition -replace 'ps1','log') -Append | out-null
+Start-Transcript -Path ($PSScriptRoot -replace 'ps1','log') -Append | out-null
 
 foreach ($server in $servers)
 { 
