@@ -1,23 +1,26 @@
 # Powershell_Scripts
 Various powershell scripts.
 
-# CleanTempFolder_Move_to_Recycle_Bin.ps1 : Moves your TEMP folder contents to Recycle Bin.
+# CleanTempFolder_Move_to_Recycle_Bin
+Moves your TEMP folder contents to Recycle Bin.
 Since long time I wanted to make that script to clean my temp folder but sending files to recycle bin, instead of "batch delete" and sending files into space...
 
-# CleanRevoUninstallerLeftovers.ps1 : Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
-After you uninstalled an application through Revo Uninstaller, it leaves files under "%LocalAppdata%\VS Revo Group\Revo Uninstaller Pro\" for restore purpose. You can clean them once you don't need it anymore.
+# CleanRevoUninstallerLeftovers
+Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
+After you uninstalled an application through Revo Uninstaller, it leaves files under "%LocalAppdata%\VS Revo Group\Revo Uninstaller Pro\" for restore purpose. 
+You can clean them once you don't need it anymore.
 
 # DiskWriteCaching
 Enables write caching on all drives.
--This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time.
--This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
--Note: Needs Microsoft Dskcache.exe tool next to the script.
--Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
+This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time.
+This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
+Note: Needs Microsoft Dskcache.exe tool next to the script.
+Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
 
 # DriversBackup_Desktop
 Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
--Sorts them in folders by "classname" : Display adapters - Human Interface Devices - IDE ATA ATAPI controllers - Network adapters - Sound, video and game controllers System devices - Universal Serial Bus controllers, making them much easier to find.
--Also creates a "Drivers without existing device" folder for driver installed without physically existing device.
+Sorts them in folders by "classname" : Display adapters - Human Interface Devices - IDE ATA ATAPI controllers - Network adapters - Sound, video and game controllers System devices - Universal Serial Bus controllers, making them much easier to find.
+Also creates a "Drivers without existing device" folder for driver installed without physically existing device.
 -Drivers are extracted in "%TEMP%" folder and then compressed as "DriversBackup.zip" on your Desktop.
 
 # DriversBackup_ScriptFolder
