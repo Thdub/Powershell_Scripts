@@ -1,5 +1,5 @@
 # Export 3rd party drivers
-# Change driver name to more human readable mode
+# Change drivers name to a more "human readable" mode
 # Printer drivers are excluded by default (inf-file names have been changed automatically)
 
 $Manufacturer = (Get-WmiObject -Class win32_computersystem).Manufacturer
@@ -7,7 +7,7 @@ $Model = (Get-WmiObject -Class win32_computersystem).Model
 $DestinationPath = "$PSScriptRoot\DriversBackup"
 $Date = (Get-Date).ToString("yyyyMMdd")
 
-# Self-elevate the script 
+# Self-elevate the script
 if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
  if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
   $CommandLine = "-File `"" + $MyInvocation.MyCommand.Path + "`" " + $MyInvocation.UnboundArguments
