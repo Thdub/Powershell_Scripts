@@ -12,7 +12,7 @@ You can clean them once you don't need it anymore.
 This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time.
 This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
 
-Note: It needs Microsoft Dskcache.exe tool next to the script.
+Note: Needs Microsoft Dskcache.exe tool next to the script.
 
 Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
 
@@ -29,7 +29,7 @@ Useful when you have problems with your start menu and pinned items resetting, o
 Note: sadly the command does not work perfectly (microsoft bug), and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
 
 -Get_Indexed_Locations_PS_ISE.ps1 : Simple script to display indexed locations using Powershell ISE.
-Note: Open the file with Powershell ISE. Needs Microsoft.Search.Interop.dll next to the script.
+Note: Needs Microsoft.Search.Interop.dll next to the script. Open the file with Powershell ISE.
 
 Download Microsoft.Search.Interop.dll : https://anonfile.com/FfA0Nfndn6/Microsoft.Search.Interop_dll
 
