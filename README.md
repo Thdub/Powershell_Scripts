@@ -14,7 +14,7 @@ Various powershell scripts.
 - This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time.
 - This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
 - Note: Needs Microsoft Dskcache.exe tool next to the script.
-- Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
+- Download dskcache.exe : https://www.upload.ee/files/10083654/dskcache.exe.html
 
 # DriversBackup_Desktop
 - Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
