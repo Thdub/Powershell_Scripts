@@ -1,14 +1,14 @@
 # Powershell_Scripts
 Various powershell scripts.
 
--CleanTempFolder_Move_to_Recycle_Bin.ps1 : Moves your TEMP folder contents to Recycle Bin.
+#CleanTempFolder_Move_to_Recycle_Bin.ps1 : Moves your TEMP folder contents to Recycle Bin.
 Since long time I wanted to make that script to clean my temp folder but sending files to recycle bin, instead of "batch delete" and sending files into space...
 
--CleanRevoUninstallerLeftovers.ps1 : Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
+#CleanRevoUninstallerLeftovers.ps1 : Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
 After you uninstalled an application through Revo Uninstaller, it leaves files under "%LocalAppdata%\VS Revo Group\Revo Uninstaller Pro\" for restore purpose.
 You can clean them once you don't need it anymore.
 
--DiskWriteCaching.ps1 : Enables write caching on all drives.
+#DiskWriteCaching.ps1 : Enables write caching on all drives.
 This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time.
 This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
 
@@ -16,19 +16,19 @@ Note: Needs Microsoft Dskcache.exe tool next to the script.
 
 Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
 
--DriversBackup_Desktop.ps1 : Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
+#DriversBackup_Desktop.ps1 : Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
 Sorts them in folders by "classname" : Display adapters - Human Interface Devices - IDE ATA ATAPI controllers - Network adapters - Sound, video and game controllers System devices - Universal Serial Bus controllers, making them much easier to find.
 Also creates a "Drivers without existing device" folder for driver installed without physically existing device.
 Drivers are extracted in "%TEMP%" folder and then compressed as "DriversBackup.zip" on your Desktop.
 
--DriversBackup_ScriptFolder.ps1 : Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). Faster method, file compression through powershell is quite slow.
+#DriversBackup_ScriptFolder.ps1 : Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). Faster method, file compression through powershell is quite slow.
 
--Export_StartMenuLayout_and_make_Default.ps1 : Exports Start Menu layout on your Desktop and copy to default user.
+#Export_StartMenuLayout_and_make_Default.ps1 : Exports Start Menu layout on your Desktop and copy to default user.
 Useful when you have problems with your start menu and pinned items resetting, or when using Group Policy to force start menu layout.
 
 Note: sadly the command does not work perfectly (microsoft bug), and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
 
--Get_Indexed_Locations_PS_ISE.ps1 : Simple script to display indexed locations using Powershell ISE.
+#Get_Indexed_Locations_PS_ISE.ps1 : Simple script to display indexed locations using Powershell ISE.
 Note: Needs Microsoft.Search.Interop.dll next to the script. Open the file with Powershell ISE.
 
 Download Microsoft.Search.Interop.dll : https://anonfile.com/FfA0Nfndn6/Microsoft.Search.Interop_dll
