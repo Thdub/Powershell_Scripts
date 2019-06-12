@@ -13,6 +13,7 @@ This task normally can only be done manually through device manager (disk drives
 This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
 
 Note: It needs Microsoft Dskcache.exe tool next to the script.
+
 Download dskcache: https://www.upload.ee/files/10083654/dskcache.exe.html
 
 -DriversBackup_Desktop.ps1 : Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
@@ -29,6 +30,7 @@ Note: sadly the command does not work perfectly (microsoft bug), and some items 
 
 -Get_Indexed_Locations_PS_ISE.ps1 : Simple script to display indexed locations using Powershell ISE.
 Note: Open the file with Powershell ISE. Needs Microsoft.Search.Interop.dll next to the script.
+
 Download Microsoft.Search.Interop.dll : https://anonfile.com/FfA0Nfndn6/Microsoft.Search.Interop_dll
 
 -PowerManagementNIC.ps1 : Disables/untick "Allow the computer to turn off this device to save power" for network adapter(s). 
