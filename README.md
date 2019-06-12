@@ -1,13 +1,13 @@
 # Powershell_Scripts
 Various powershell scripts.
 
-# CleanTempFolder_Move_to_Recycle_Bin
-- Moves your TEMP folder contents to Recycle Bin.
-- Since long time I wanted to make that script to clean my temp folder but sending files to recycle bin, instead of "batch delete" and sending files into space...
-
 # CleanRevoUninstallerLeftovers
 - Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
 - After you uninstalled an application through Revo Uninstaller, it leaves files under "%LocalAppdata%\VS Revo Group\Revo Uninstaller Pro\" for restore purpose. You can clean them once you don't need it anymore.
+
+# CleanTempFolder_Move_to_Recycle_Bin
+- Moves your TEMP folder contents to Recycle Bin.
+- Since long time I wanted to make that script to clean my temp folder but sending files to recycle bin, instead of "batch delete" and sending files into space... 
 
 # DiskWriteCaching
 - Enables write caching on all drives.
