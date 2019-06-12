@@ -24,7 +24,8 @@ Drivers are extracted in "%TEMP%" folder and then compressed as "DriversBackup.z
 
 -Export_StartMenuLayout_and_make_Default.ps1 : Exports Start Menu layout on your Desktop and copy to default user.
 Useful when you have problems with your start menu and pinned items resetting, or when using Group Policy to force start menu layout.
-Note: sadly the command does not work perfectly, some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
+
+Note: sadly the command does not work perfectly (microsoft bug), and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
 
 -Get_Indexed_Locations_PS_ISE.ps1 : Simple script to display indexed locations using Powershell ISE.
 Note: Open the file with Powershell ISE. Needs Microsoft.Search.Interop.dll next to the script.
