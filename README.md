@@ -43,7 +43,7 @@ Various powershell scripts.
 - Disables/untick "allow the computer to turn off this device to save power" for all USB Hubs.
 - This setting is found under "PowerManagement" tab in Device Manager
 
-# WinDefenderToggle.ps1
+# WinDefenderToggle
 - Toggle Windows Defender on and off. 
 - Can be used for a context menu Defender on/off switch. Another good (better) method for that though, is this one:
 https://github.com/Thdub/Personalize_Next_Gen/blob/master/CUSTOMIZE/02_Context_Menu_CUSTOMIZE/DB06_Desktop_Background_WindowsDefender_Toggle.reg
