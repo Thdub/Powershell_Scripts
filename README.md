@@ -2,15 +2,15 @@
 Various powershell scripts.
 
 # CleanRevoUninstallerLeftovers
-    Moves Revo Uninstaller installations backups/leftovers to Recycle Bin.
+    Move Revo Uninstaller installations backups/leftovers to Recycle Bin.
     After you uninstalled an application through Revo Uninstaller, it leaves files under "%LocalAppdata%\VS Revo Group\Revo Uninstaller Pro\" for restore purpose. You can clean them once you don't need it anymore.
 
 # CleanTempFolder_Move_to_Recycle_Bin
-    Moves your TEMP folder contents to Recycle Bin.
+    Move your TEMP folder contents to Recycle Bin.
     Since long time I wanted to make that script to clean my temp folder but sending files to recycle bin, instead of "batch delete" and sending files into space... 
 
 # DiskWriteCaching
-    Enables write caching on all drives.
+    Enable write caching on all drives.
     This task normally can only be done manually through device manager (disk drives/policies tab/enable write caching), and one drive at a time. This script will enable write caching for all your drives at once, handful when you set up your system for the first time.
     Note: Needs Microsoft Dskcache.exe tool next to the script.
     Download dskcache.exe : https://www.upload.ee/files/10083654/dskcache.exe.html
@@ -25,7 +25,7 @@ Various powershell scripts.
     Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). Faster method, file compression through powershell is quite slow.
 
 # Export_StartMenuLayout_and_make_Default
-    Exports Start Menu layout on your Desktop and copy to default user.
+    Export Start Menu layout on your Desktop and copy to default user.
     Useful when you have problems with your start menu and pinned items resetting, or when using Group Policy to force start menu layout.
     Note: Sadly that command does not work perfectly (microsoft bug) at parsing your links, and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
 
@@ -35,11 +35,11 @@ Various powershell scripts.
     Download Microsoft.Search.Interop.dll : https://anonfile.com/FfA0Nfndn6/Microsoft.Search.Interop_dll
 
 # PowerManagementNIC
-	Disables/untick "Allow the computer to turn off this device to save power" for network adapter(s). 
+	Disable/untick "Allow the computer to turn off this device to save power" for network adapter(s). 
 	This setting is found under "Power Management" tab in Device Manager.
 
 # PowerManagementUSB
-	Disables/untick "allow the computer to turn off this device to save power" for all USB Hubs.
+	Disable/untick "allow the computer to turn off this device to save power" for all USB Hubs.
 	This setting is found under "PowerManagement" tab in Device Manager
 
 # WinDefenderToggle
