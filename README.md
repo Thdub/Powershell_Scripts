@@ -30,14 +30,16 @@
   Note: Drivers are extracted in "%TEMP%" folder and then compressed as "DriversBackup.zip" on your Desktop.
 
 # DriversBackup_ScriptFolder
-  Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). Faster method, file compression through powershell is quite slow.
+  Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). 
+  
+  Faster method: file compression through powershell is quite slow.
 
 # Export_StartMenuLayout_and_make_Default
   Export Start Menu layout on your Desktop and copy to default user.
   
   Useful when you have problems with your start menu and pinned items resetting, or when using Group Policy to force start menu layout.
   
-  Note: Sadly that command does not work perfectly (microsoft bug) at parsing your links, and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
+  Note: Sadly that command does not work perfectly at parsing your links (microsoft fault), and some items may be missing when you have lots of pinned apps/links. Editing .xml manually is recommended.
 
 # Get_Indexed_Locations_PS_ISE
   Simple script to display indexed locations using Powershell ISE.
