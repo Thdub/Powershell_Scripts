@@ -20,20 +20,6 @@
  
  Download dskcache.exe : https://www.upload.ee/files/10230433/Utilities.zip.html
 
-# DriversBackup_Desktop
-  Export all your (3rd party) drivers, changes drivers folders names to a "human readable" one.
-  
-  Sorts them in folders by "classname" : Display adapters - Human Interface Devices - IDE ATA ATAPI controllers - Network adapters - Sound, video and game controllers System devices - Universal Serial Bus controllers, making them much easier to find.
-  
-  Also creates a "Drivers without existing device" folder for driver installed without physically existing device.
-  
-  Note: Drivers are extracted in "%TEMP%" folder and then compressed as "DriversBackup.zip" on your Desktop.
-
-# DriversBackup_ScriptFolder
-  Same as above, but drivers will be extracted in "DriversBackup" folder, next to the script (and folder is not zipped). 
-  
-  Faster method: file compression through powershell is quite slow.
-
 # Export_StartMenuLayout_and_make_Default
   Export Start Menu layout on your Desktop and copy to default user.
   
